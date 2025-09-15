@@ -21,57 +21,77 @@ TESSERACT_CONFIG = r'--oem 3 --psm 6 -l eng'
 
 TITLE_KEYWORDS = {
     # C-Suite / Founders
-    "ceo","cto","cfo","coo","cio","cmo","cso","cpo","cbo","cro","cdo",
-    "founder","co-founder","owner","partner","proprietor","chairman","chairperson",
-    "president","vice president","vp","managing director","director","joint director",
+    "ceo","cto","cfo","coo","cio","cmo","cso","cpo","cbo","cro","cdo","cao","cco","cho","ciso","cxo",
+    "founder","co-founder","owner","partner","proprietor","chairman","chairperson","chairwoman",
+    "president","vice president","vp","svp","avp","executive vice president","managing director","director","joint director",
+    "board member","board of directors","non-executive director","independent director","trustee",
 
     # Senior Roles
-    "general manager","gm","associate director","assistant director","principal",
-    "head","department head","hod","lead","leader","team lead","tech lead","architect",
+    "general manager","gm","associate director","assistant director","principal","principal scientist",
+    "head","department head","hod","lead","leader","team lead","tech lead","architect","chief architect",
+    "senior architect","practice head","delivery head","strategy head","operations head","design head",
+    "technology head","unit head","vertical head","country head","regional head","global head",
 
     # Mid-level Roles
-    "manager","assistant manager","associate manager","product manager",
-    "project manager","program manager","operations manager","delivery manager",
+    "manager","assistant manager","associate manager","product manager","senior product manager",
+    "project manager","program manager","portfolio manager","account manager","relationship manager",
+    "operations manager","delivery manager","engagement manager","campaign manager","marketing manager",
+    "hr manager","finance manager","sales manager","business manager","brand manager","supply chain manager",
+    "logistics manager","procurement manager","export manager","import manager","regional manager",
 
     # Officers
-    "officer","chief officer","senior officer","executive officer","admin officer",
-    "compliance officer","account officer","finance officer","marketing officer",
-    "sales officer","hr officer",
+    "officer","chief officer","senior officer","executive officer","admin officer","compliance officer",
+    "account officer","finance officer","marketing officer","sales officer","hr officer","security officer",
+    "public relations officer","legal officer","medical officer","safety officer","procurement officer",
+    "training officer","customs officer","government officer","welfare officer","immigration officer",
 
     # Specialists / Analysts
-    "specialist","consultant","advisor","analyst","business analyst","data analyst",
-    "financial analyst","investment analyst","market analyst","research analyst",
-    "researcher","scientist","technologist","trainer","coach","mentor",
+    "specialist","senior specialist","consultant","senior consultant","advisor","analyst","senior analyst",
+    "business analyst","data analyst","financial analyst","investment analyst","market analyst","research analyst",
+    "system analyst","security analyst","policy analyst","management consultant","strategy consultant",
+    "researcher","scientist","technologist","trainer","coach","mentor","lecturer","professor","associate professor",
+    "assistant professor","teacher","educator","instructor","tutor","fellow","postdoc","academic researcher",
 
     # Engineers / Developers
-    "engineer","developer","software engineer","senior engineer","systems engineer",
-    "support engineer","field engineer","qa engineer","test engineer","devops engineer",
-    "frontend developer","backend developer","fullstack developer","mobile developer",
-    "data engineer","cloud engineer","ml engineer","ai engineer","research engineer",
+    "engineer","developer","software engineer","senior engineer","systems engineer","support engineer",
+    "field engineer","qa engineer","test engineer","devops engineer","frontend developer","backend developer",
+    "fullstack developer","mobile developer","ios developer","android developer","web developer","game developer",
+    "data engineer","cloud engineer","ml engineer","ai engineer","research engineer","electronics engineer",
+    "mechanical engineer","civil engineer","electrical engineer","automation engineer","network engineer",
+    "embedded engineer","firmware engineer","biomedical engineer","chemical engineer","aerospace engineer",
+    "marine engineer","mining engineer","petroleum engineer","nuclear engineer","robotics engineer",
 
     # Coordination Roles
-    "coordinator","supervisor","administrator","controller","auditor","inspector",
-    "secretary","registrar","facilitator","moderator",
+    "coordinator","senior coordinator","supervisor","administrator","controller","auditor","inspector",
+    "secretary","registrar","facilitator","moderator","organizer","planner","scheduler","clerk","executive assistant",
+    "personal assistant","office assistant","office administrator","receptionist","front desk","liaison officer",
 
     # Entry Level
-    "assistant","associate","intern","trainee","apprentice","fellow","junior"
+    "assistant","associate","intern","trainee","apprentice","fellow","junior","graduate trainee","management trainee",
+    "probationary officer","entry level","fresh graduate","new hire","student intern"
 }
 
 
 ORG_HINTS = [
-    # Corporate Forms
+    # Corporate Forms (Worldwide)
     "pvt","ltd","llp","plc","inc","corp","company","co","enterprises","enterprise",
-    "industries","industry","ventures","capital","partners","holdings","group",
-    "associates","alliance","union","federation","trust","ngo","foundation",
+    "industries","industry","ventures","capital","partners","holdings","group","gmbh","kg","mbh",
+    "associates","alliance","union","federation","trust","ngo","foundation","sociedad","sarl","srl","sas",
+    "startup","organization","establishment","entity","firm","consortium","syndicate","oy","ab","as","bv","nv",
+    "pte","pty","limited","ulc","llc","sa","spa","aps","oyj","zrt","ag","kft","eee","kk","kabushiki","cooperative",
+    "foundation","charity","association","council","chamber","confederation","authority","government",
 
     # Tech / Consulting
     "technologies","technology","solutions","systems","consulting","services",
     "software","hardware","infrastructure","platforms","innovation","labs","ai",
     "cloud","robotics","automation","analytics","digital","data","design","studio",
+    "networks","it","bpo","kpo","outsourcing","cyber","blockchain","crypto",
+    "iot","wearables","electronics","semiconductors","telecom","communications","engineering",
 
     # Education / Research
-    "institute","academy","school","college","university","research","center",
-    "council","organization","association","society","board","mission"
+    "institute","academy","school","college","university","research","center","laboratory","campus",
+    "council","organization","association","society","board","mission","training","education",
+    "tutorials","gurukul","ashram","coaching","learning","faculty","polytechnic","conservatory"
 ]
 
 
@@ -79,19 +99,29 @@ ADDRESS_HINTS = [
     # Common Address Words
     "road","street","st","lane","avenue","ave","sector","block","nagar","layout",
     "colony","phase","circle","cross","main","market","plaza","bazaar","marg","path",
+    "extension","society","enclave","residency","pocket","zone","scheme","ward",
+    "boulevard","blvd","drive","dr","highway","hwy","route","expressway","freeway",
+    "alley","close","crescent","terrace","grove","court","row","quay","walk","way",
 
     # Areas & Locations
-    "city","town","village","district","state","mandal","taluk","region","zone",
-    "ward","locality","society","complex","colony","residency","quarters","campus",
+    "city","town","village","district","state","province","prefecture","territory","county",
+    "mandal","taluk","region","zone","ward","locality","society","complex","residency","quarters",
+    "campus","panchayat","municipality","metro","urban","rural","area","division","colony","suburb",
+    "downtown","uptown","borough","neighborhood","parish","commune","canton","shire",
 
     # Buildings
     "park","garden","society","complex","tower","building","apartment","flat",
     "floor","wing","chamber","gate","arch","bridge","square","court","yard",
+    "mall","resort","bungalow","villa","mansion","hostel","dormitory","office","warehouse",
+    "factory","plant","shed","terminal","station","club","hall","auditorium","stadium","arena",
+    "temple","church","mosque","synagogue","cathedral","chapel","pagoda","monastery",
 
     # Other Identifiers
-    "pin","zip","pincode","postal","india","highway","bypass","station","junction",
-    "terminal","stand","hub","circle","chowk","bus stop","metro","railway"
+    "pin","zip","zipcode","pincode","postal","postcode","india","highway","bypass",
+    "station","junction","terminal","stand","hub","circle","chowk","bus stop","metro","railway",
+    "flyover","stop","signal","crossing","galli","chawl","society gate","checkpoint","mile","marker"
 ]
+
 
 
 # Common Indian names patterns
